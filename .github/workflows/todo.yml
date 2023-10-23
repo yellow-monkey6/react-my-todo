@@ -4,6 +4,14 @@ on:
     branches:
       - master
 jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unit test
+        uses: actions/checkout@master
+        with:
+          test-script: npm test
   build:
     name: build
     runs-on: ubuntu-latest
