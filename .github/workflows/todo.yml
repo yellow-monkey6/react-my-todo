@@ -10,8 +10,12 @@ jobs:
     steps:
       - name: Unit test
         uses: actions/checkout@master
+      - name: Test coverage
+        uses: ./
         with:
-          test-script: npm test
+          github-token: ${{ secrets.BOT_TOKEN }}
+          annotations: failed tests
+          test-script: npm run test:coverage
   build:
     name: build
     runs-on: ubuntu-latest
