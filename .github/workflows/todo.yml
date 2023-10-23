@@ -14,7 +14,7 @@ jobs:
         uses: ArtiomTr/jest-coverage-report-action@v2.2.5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          annotations: failed tests
+          annotations: failed-tests
           test-script: npm run test:coverage
   build:
     name: build
