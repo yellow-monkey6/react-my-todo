@@ -1,0 +1,19 @@
+name: PR Caverage Check
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+jobs:
+  coverage:
+    name: test-coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unit test
+        uses: actions/checkout@master
+      - name: Test coverage
+        uses: ArtiomTr/jest-coverage-report-action@v2.2.5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          annotations: failed-tests
+          test-script: npm run test:coverage
