@@ -1,3 +1,3 @@
-class UseCase {
+export class UseCase {
     
 }
