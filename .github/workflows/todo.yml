@@ -11,7 +11,7 @@ jobs:
       - name: Unit test
         uses: actions/checkout@master
       - name: Test coverage
-        uses: ./
+        uses: ArtiomTr/jest-coverage-report-action@v2.2.5
         with:
           github-token: ${{ secrets.BOT_TOKEN }}
           annotations: failed tests
