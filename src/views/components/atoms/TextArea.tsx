@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 // ボタンのプロパティの型を定義
 type TextAreaProps = {
     text: string; 
-    classNames?: string;
+    className?: string;
     rows?: number;
 }
 
@@ -13,7 +13,7 @@ export default function TextArea(props: TextAreaProps) {
   return (
     <TextField 
       id="outlined-basic" 
-      className={props.classNames} 
+      className={props.className} 
       label={props.text} 
       variant="outlined"
       multiline

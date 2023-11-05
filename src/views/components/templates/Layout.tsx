@@ -58,7 +58,7 @@ export default function Layout() {
                     paddingBottom: '20px',
                   }}
                 >
-                  <ContainedButton text="Cancel"></ContainedButton>
+                  <ContainedButton text="cancel"></ContainedButton>
                   <SubmitButton text="submit" ></SubmitButton>
                 </Stack>
               </Stack>
