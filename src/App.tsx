@@ -2,13 +2,14 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import Layout from './views/components/templates/Layout';
+import TodoListLayout from './views/components/templates/TodoListLayout';
 
-function App() {
+function App(  ) {
   return (
     <div className="App">
       <header className="App-header">
 
-      <Layout  />
+      <TodoListLayout  />
 
 
         {/* <img src={logo} className="App-logo" alt="logo" />
